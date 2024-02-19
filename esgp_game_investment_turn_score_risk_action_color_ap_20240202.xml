@@ -1,0 +1,302 @@
+<graph version="v4.05" name="" author="" interval="1.5" timeMode="asynchronous" distributionMode="instantaneous" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="1100" height="960" numberOfRuns="100" visibleRuns="100" colorCoding="0">
+  <connection type="Resource Connection" start="56" end="105" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="57" end="52" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="58" end="112" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="113" end="140" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="111" end="56" label="D6" position="0.67" color="Black" thickness="2">
+    <point x="381" y="668"/>
+  </connection>
+  <connection type="Resource Connection" start="56" end="49" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="57" end="72" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="9" end="29" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="110" end="56" label="*" position="0.67" color="Black" thickness="2">
+    <point x="348" y="673"/>
+  </connection>
+  <node symbol="Gate" x="543" y="762" color="Black" caption="InvP" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="strategy"/>
+  <connection type="State Connection" start="9" end="58" label="*" position="0.71" color="Black" thickness="2">
+    <point x="544" y="670"/>
+  </connection>
+  <node symbol="Gate" x="475" y="765" color="Black" caption="InvG" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="strategy"/>
+  <connection type="Resource Connection" start="111" end="58" label="D6" position="0.85" color="Black" thickness="2">
+    <point x="620" y="665"/>
+  </connection>
+  <connection type="State Connection" start="49" end="78" label="s" position="0.92" color="Black" thickness="2">
+    <point x="382" y="403"/>
+    <point x="315" y="401"/>
+  </connection>
+  <connection type="State Connection" start="72" end="78" label="g" position="-0.81" color="Black" thickness="2">
+    <point x="502" y="403"/>
+    <point x="361" y="399"/>
+    <point x="361" y="346"/>
+  </connection>
+  <connection type="State Connection" start="72" end="79" label="g" position="0.75" color="Black" thickness="2">
+    <point x="501" y="399"/>
+    <point x="473" y="399"/>
+    <point x="473" y="351"/>
+  </connection>
+  <connection type="State Connection" start="72" end="33" label="g" position="-0.91" color="Black" thickness="2">
+    <point x="502" y="405"/>
+    <point x="571" y="401"/>
+  </connection>
+  <connection type="State Connection" start="49" end="80" label="s" position="0.89" color="Black" thickness="2">
+    <point x="382" y="400"/>
+    <point x="645" y="399"/>
+    <point x="649" y="351"/>
+  </connection>
+  <connection type="State Connection" start="72" end="80" label="g" position="0.97" color="Black" thickness="2">
+    <point x="502" y="401"/>
+    <point x="688" y="399"/>
+  </connection>
+  <node symbol="TextLabel" x="651" y="414" color="Black" caption="People"/>
+  <connection type="State Connection" start="95" end="90" label="25%" position="-0.67" color="Black" thickness="2">
+    <point x="47" y="452"/>
+  </connection>
+  <connection type="State Connection" start="90" end="96" label="*" position="-0.59" color="Black" thickness="2">
+    <point x="99" y="392"/>
+  </connection>
+  <connection type="State Connection" start="92" end="91" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="90" end="93" label="*" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="53" end="54" label="1" position="-0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="71" end="33" label="p" position="-0.61" color="Black" thickness="2">
+    <point x="621" y="399"/>
+    <point x="611" y="397"/>
+    <point x="611" y="351"/>
+  </connection>
+  <connection type="State Connection" start="109" end="78" label="e" position="0.63" color="Black" thickness="2">
+    <point x="263" y="405"/>
+    <point x="278" y="406"/>
+    <point x="279" y="348"/>
+  </connection>
+  <connection type="State Connection" start="109" end="79" label="e" position="0.85" color="Black" thickness="2">
+    <point x="262" y="403"/>
+    <point x="395" y="401"/>
+    <point x="394" y="347"/>
+  </connection>
+  <connection type="State Connection" start="49" end="79" label="s" position="0.85" color="Black" thickness="2">
+    <point x="383" y="400"/>
+    <point x="430" y="401"/>
+  </connection>
+  <node symbol="Source" x="622" y="761" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black"/>
+  <connection type="State Connection" start="11" end="57" label="*" position="0.74" color="Black" thickness="2">
+    <point x="475" y="665"/>
+  </connection>
+  <connection type="State Connection" start="39" end="53" label="*" position="0.34" color="Black" thickness="2">
+    <point x="158" y="818"/>
+  </connection>
+  <connection type="Resource Connection" start="55" end="54" label="1" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Register" x="570" y="354" color="Black" caption="s+2g+2p" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <connection type="State Connection" start="78" end="143" label="" position="0.5" color="Green" thickness="2"/>
+  <connection type="State Connection" start="79" end="143" label="" position="0.5" color="Blue" thickness="2"/>
+  <connection type="State Connection" start="33" end="143" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="80" end="143" label="" position="0.5" color="Red" thickness="2"/>
+  <connection type="State Connection" start="11" end="53" label="*" position="0.75" color="Black" thickness="2">
+    <point x="432" y="788"/>
+    <point x="192" y="788"/>
+  </connection>
+  <node symbol="Gate" x="292" y="821" color="Black" caption="InvE" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="strategy"/>
+  <connection type="Resource Connection" start="142" end="109" label="D6" position="-0.09" color="Black" thickness="2"/>
+  <connection type="State Connection" start="49" end="33" label="s" position="-0.84" color="Black" thickness="2">
+    <point x="382" y="400"/>
+    <point x="525" y="399"/>
+    <point x="529" y="351"/>
+  </connection>
+  <connection type="State Connection" start="136" end="81" label="*" position="0.86" color="Black" thickness="2">
+    <point x="879" y="254"/>
+  </connection>
+  <connection type="State Connection" start="81" end="138" label="35%" position="-0.88" color="Black" thickness="2">
+    <point x="788" y="251"/>
+  </connection>
+  <connection type="State Connection" start="81" end="137" label="15%" position="-0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="81" end="139" label="25%" position="-0.89" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="22" y="317" color="Green" caption="Risk Step" width="204.9801116943359" height="347.44526367187495" captionPos="7"/>
+  <node symbol="Drain" x="154" y="616" color="Black" caption="Reinforce Loss" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="92" end="47" label="*" position="0.62" color="Black" thickness="2">
+    <point x="94" y="617"/>
+  </connection>
+  <node symbol="Pool" x="380" y="461" color="Black" caption="SumS" thickness="2" captionPos="0" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="10" capacity="-1" displayCapacity="5"/>
+  <node symbol="TextLabel" x="414" y="424" color="Black" caption="Social"/>
+  <node symbol="TextLabel" x="319" y="420" color="Black" caption="Environmental"/>
+  <node symbol="Drain" x="562" y="567" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
+  <node symbol="Source" x="123" y="730" color="Black" caption="IncStep" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="60" y="785" color="Black" caption="step" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1" displayCapacity="-1"/>
+  <node symbol="Source" x="79" y="868" color="Black" caption="NextStep" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="379" y="590" color="Black" caption="ResS" thickness="2" captionPos="0.75" activationMode="passive" pullMode="push all" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="502" y="590" color="Black" caption="ResG" thickness="2" captionPos="0.75" activationMode="passive" pullMode="push all" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="619" y="589" color="Black" caption="ResP" thickness="2" captionPos="0.75" activationMode="passive" pullMode="push all" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <connection type="Resource Connection" start="58" end="71" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="111" end="57" label="D6" position="0.72" color="Black" thickness="2">
+    <point x="502" y="666"/>
+  </connection>
+  <connection type="State Connection" start="111" end="53" label="*" position="0.76" color="Black" thickness="2"/>
+  <connection type="State Connection" start="110" end="53" label="*" position="0.63" color="Black" thickness="2">
+    <point x="196" y="766"/>
+  </connection>
+  <connection type="State Connection" start="113" end="105" label=">=2" position="-0.99" color="Black" thickness="2">
+    <point x="726" y="725"/>
+    <point x="725" y="524"/>
+    <point x="443" y="522"/>
+  </connection>
+  <node symbol="Pool" x="849" y="766" color="Black" caption="turn" thickness="2" captionPos="0.17" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1" displayCapacity="-1"/>
+  <connection type="State Connection" start="64" end="66" label=">5" position="0.43" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="849" y="853" color="Black" caption="End Turns" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="9" end="53" label="*" position="0.84" color="Black" thickness="2">
+    <point x="502" y="740"/>
+    <point x="206" y="737"/>
+  </connection>
+  <connection type="State Connection" start="71" end="80" label="p" position="-0.74" color="Black" thickness="2">
+    <point x="621" y="403"/>
+    <point x="729" y="401"/>
+    <point x="729" y="351"/>
+  </connection>
+  <node symbol="GroupBox" x="21" y="681" color="Gray" caption="Step Control" width="204.452001953125" height="267.830322265625" captionPos="10"/>
+  <node symbol="GroupBox" x="227" y="948" color="Gray" caption="" width="371.547998046875" height="-29.872021484374955" captionPos="7"/>
+  <node symbol="Pool" x="619" y="468" color="Black" caption="SumP" thickness="2" captionPos="0.87" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="10" capacity="-1" displayCapacity="5"/>
+  <node symbol="Pool" x="501" y="465" color="Black" caption="SumG" thickness="2" captionPos="0.82" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="10" capacity="-1" displayCapacity="5"/>
+  <connection type="Resource Connection" start="111" end="64" label="1" position="-0.98" color="Black" thickness="2">
+    <point x="494" y="719"/>
+    <point x="849" y="718"/>
+  </connection>
+  <connection type="State Connection" start="11" end="29" label="*" position="0.12" color="Black" thickness="2">
+    <point x="476" y="820"/>
+    <point x="622" y="820"/>
+  </connection>
+  <connection type="State Connection" start="110" end="29" label="*" position="0.06" color="Black" thickness="2">
+    <point x="348" y="821"/>
+    <point x="622" y="820"/>
+  </connection>
+  <connection type="State Connection" start="39" end="29" label="*" position="0.03" color="Black" thickness="2">
+    <point x="621" y="821"/>
+  </connection>
+  <node symbol="GroupBox" x="599" y="706" color="Gray" caption="" width="329.31533203125" height="241.9560546875" captionPos="7"/>
+  <node symbol="Register" x="318" y="350" color="Black" caption="3e+s+g" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="Register" x="430" y="351" color="Black" caption="2e+s++2g" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="Register" x="688" y="351" color="Black" caption="2s+2g+p" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
+  <node symbol="Gate" x="787" y="251" color="Black" caption="GainResource" thickness="2" captionPos="0.17" activationMode="passive" pullMode="pull any" actions="1" gateType="strategy"/>
+  <connection type="State Connection" start="81" end="142" label="25%" position="-0.9400000000000001" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="597" y="513" color="Yellow" caption="" width="142.01669921874998" height="170.82709960937495" captionPos="15"/>
+  <connection type="State Connection" start="113" end="112" label=">=2" position="-0.97" color="Black" thickness="2">
+    <point x="725" y="522"/>
+    <point x="681" y="523"/>
+  </connection>
+  <connection type="State Connection" start="113" end="52" label=">=2" position="-0.89" color="Black" thickness="2">
+    <point x="726" y="732"/>
+    <point x="725" y="520"/>
+    <point x="559" y="522"/>
+  </connection>
+  <connection type="Resource Connection" start="109" end="91" label="D3+1" position="0.58" color="Black" thickness="2">
+    <point x="204" y="543"/>
+  </connection>
+  <connection type="Resource Connection" start="109" end="47" label="2" position="0.68" color="Black" thickness="2">
+    <point x="217" y="604"/>
+  </connection>
+  <connection type="State Connection" start="95" end="53" label="*" position="-0.88" color="Black" thickness="2">
+    <point x="32" y="588"/>
+    <point x="33" y="731"/>
+  </connection>
+  <connection type="State Connection" start="95" end="92" label="75%" position="0.77" color="Black" thickness="2">
+    <point x="48" y="544"/>
+  </connection>
+  <node symbol="Gate" x="99" y="444" color="Black" caption="Risk" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Drain" x="155" y="545" color="Black" caption="Negative Effect" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Gate" x="94" y="544" color="Black" caption="Risk" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Source" x="166" y="442" color="Black" caption="Positive Effect" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="93" end="109" label="D4" position="-0.32" color="Black" thickness="2"/>
+  <node symbol="Gate" x="46" y="500" color="Black" caption="PickEventCard" thickness="2" captionPos="0" activationMode="interactive" pullMode="pull any" actions="1" gateType="dice"/>
+  <node symbol="Source" x="158" y="389" color="Black" caption="Reinfoce Gain" thickness="2" captionPos="0.66" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="96" end="109" label="2" position="0.17" color="Black" thickness="2">
+    <point x="211" y="388"/>
+  </connection>
+  <connection type="State Connection" start="109" end="96" label=">20" position="-0.68" color="Black" thickness="2">
+    <point x="212" y="338"/>
+    <point x="158" y="334"/>
+  </connection>
+  <connection type="Resource Connection" start="111" end="108" label="D6" position="0.8300000000000001" color="Black" thickness="2">
+    <point x="264" y="669"/>
+  </connection>
+  <connection type="State Connection" start="39" end="108" label="*" position="0.7000000000000001" color="Black" thickness="2">
+    <point x="254" y="806"/>
+    <point x="254" y="688"/>
+  </connection>
+  <node symbol="GroupBox" x="746" y="307" color="Purple" caption="" width="181.9373535156251" height="374.7074951171875" captionPos="9"/>
+  <node symbol="GroupBox" x="239" y="219" color="Purple" caption="Action Step" width="687.74375" height="88.6668701171875" captionPos="9"/>
+  <connection type="State Connection" start="136" end="53" label="*" position="0.97" color="Black" thickness="2">
+    <point x="910" y="436"/>
+    <point x="909" y="930"/>
+    <point x="120" y="929"/>
+  </connection>
+  <node symbol="GroupBox" x="239" y="515" color="Yellow" caption="Investment Step" width="356.23334960937495" height="385.52956542968747" captionPos="10"/>
+  <node symbol="Drain" x="447" y="565" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
+  <connection type="State Connection" start="113" end="107" label=">=2" position="-0.93" color="Black" thickness="2">
+    <point x="725" y="725"/>
+    <point x="726" y="523"/>
+    <point x="321" y="523"/>
+  </connection>
+  <node symbol="Drain" x="326" y="562" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
+  <node symbol="Pool" x="263" y="595" color="Black" caption="ResE" thickness="2" captionPos="0.75" activationMode="passive" pullMode="push all" actions="1" resourceColor="Black" startingResources="0" capacity="-1"/>
+  <node symbol="Pool" x="264" y="456" color="Black" caption="SumE" thickness="2" captionPos="0" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="10" capacity="-1" displayCapacity="5"/>
+  <node symbol="Gate" x="348" y="767" color="Black" caption="InvS" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" gateType="strategy"/>
+  <node symbol="Source" x="439" y="668" color="Black" caption="RollDice" thickness="2" captionPos="0.25" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="685" y="584" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
+  <node symbol="Pool" x="724" y="759" color="Black" caption="counter" thickness="2" captionPos="0.33" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1" displayCapacity="-1"/>
+  <connection type="Resource Connection" start="29" end="113" label="1" position="-0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="113" end="140" label="==2" position="0.5" color="Black" thickness="2">
+    <point x="781" y="761"/>
+    <point x="782" y="859"/>
+  </connection>
+  <connection type="State Connection" start="136" end="128" label="75%" position="-0.44" color="Black" thickness="2"/>
+  <connection type="State Connection" start="109" end="47" label="&lt;10" position="0.88" color="Black" thickness="2">
+    <point x="289" y="499"/>
+    <point x="293" y="635"/>
+    <point x="202" y="632"/>
+  </connection>
+  <connection type="Resource Connection" start="108" end="107" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="108" end="109" label="all" position="0.5" color="Black" thickness="2"/>
+  <node symbol="ArtificialPlayer" x="366" y="842" color="Black" caption="RoundRobin" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">fireSequence(InvE, InvS, InvG, InvP)</node>
+  <node symbol="ArtificialPlayer" x="552" y="866" color="Black" caption="HighestDice" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (ResE &gt;= ResS &amp;&amp; ResE &gt;= ResG &amp;&amp; ResE &gt;= ResP) fire(InvE)if (ResS &gt;= ResG &amp;&amp; ResS &gt;= ResP) fire(InvS)if (ResG &gt;= ResP) fire(InvG)if (ResP &gt; ResG) fire(InvP)</node>
+  <node symbol="ArtificialPlayer" x="171" y="860" color="Black" caption="StepController" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="0" actionsPerTurn="1">if (step%5 ==  0) fire(RollDice)if (step%5 ==  1 || step%5 ==  2) fire(LastFirst)if (step%5 ==  3) fire(PickActionCard)if (step%5 ==  4 &amp;&amp; turn == 4) fire(PickEventCard)if (step%5 ==  4 &amp;&amp; turn == 5) fire(PickEventCard)fire(NextStep)</node>
+  <node symbol="ArtificialPlayer" x="486" y="842" color="Black" caption="LastFirst" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (SumE &lt;= SumS &amp;&amp; SumE &lt;= SumG &amp;&amp; SumE &lt;= SumP) fire(InvE)if (SumS &lt;= SumG &amp;&amp; SumS &lt;= SumP) fire(InvS)if (SumG &lt;= SumP) fire(InvG)if (SumP &lt; SumG) fire(InvP)</node>
+  <node symbol="ArtificialPlayer" x="429" y="865" color="Black" caption="ReachScore" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (SumE &lt; 20 &amp;&amp; counter == 0) fire(InvE)if (SumS &lt; 20 &amp;&amp; counter == 1) fire(InvS)if (SumG &lt; 20) fire(InvG)if (SumP &lt; 20) fire(InvP)if (SumE &lt;= SumS) fire(InvE)if (SumE &gt; SumS) fire(InvS)</node>
+  <node symbol="TextLabel" x="549" y="415" color="Black" caption="Governance"/>
+  <node symbol="Drain" x="804" y="427" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Drain" x="804" y="469" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Gate" x="879" y="507" color="Black" caption="CostResource" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" gateType="strategy"/>
+  <node symbol="Drain" x="806" y="613" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Drain" x="806" y="562" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <connection type="State Connection" start="128" end="130" label="25%" position="-0.76" color="Black" thickness="2">
+    <point x="877" y="562"/>
+  </connection>
+  <connection type="State Connection" start="128" end="129" label="25%" position="-0.86" color="Black" thickness="2">
+    <point x="879" y="611"/>
+  </connection>
+  <node symbol="GroupBox" x="238" y="319" color="Red" caption="" width="500.885009765625" height="184.794482421875" captionPos="7"/>
+  <connection type="State Connection" start="128" end="127" label="25%" position="0.62" color="Black" thickness="2">
+    <point x="880" y="467"/>
+  </connection>
+  <connection type="State Connection" start="128" end="126" label="25%" position="0.74" color="Black" thickness="2">
+    <point x="880" y="430"/>
+  </connection>
+  <node symbol="Gate" x="879" y="370" color="Black" caption="PickActionCard" thickness="2" captionPos="0.62" activationMode="interactive" pullMode="pull any" actions="1" gateType="deterministic"/>
+  <node symbol="Source" x="620" y="251" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="502" y="251" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Source" x="379" y="252" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="724" y="856" color="Black" caption="Clear Dice Outcomes" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
+  <node symbol="ArtificialPlayer" x="992" y="849" color="Black" caption="OldController" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (ResE == 0 &amp;&amp; ResS == 0 &amp;&amp; ResG == 0 &amp; ResP == 0) fire(RollDice)fire(RoundRobin)</node>
+  <node symbol="Source" x="261" y="251" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Chart" x="21" y="109" color="Black" caption="" width="197.740478515625" height="142.92143554687493" captionPos="5" scaleX="0" scaleY="160"/>
+  <connection type="Resource Connection" start="139" end="49" label="D5" position="0.08" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="138" end="72" label="D4" position="0.09" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="137" end="71" label="D3" position="-0.07" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="71" end="127" label="D2" position="-0.91" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="72" end="126" label="D3" position="-0.9500000000000001" color="Black" thickness="2">
+    <point x="582" y="426"/>
+  </connection>
+  <connection type="Resource Connection" start="49" end="130" label="D3" position="0.85" color="Black" thickness="2">
+    <point x="488" y="696"/>
+    <point x="767" y="695"/>
+    <point x="766" y="562"/>
+  </connection>
+  <connection type="Resource Connection" start="109" end="129" label="D4" position="0.97" color="Black" thickness="2">
+    <point x="366" y="730"/>
+    <point x="806" y="733"/>
+  </connection>
+</graph>

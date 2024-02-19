@@ -5,7 +5,7 @@
   <connection type="Resource Connection" start="21" end="0" label="all" position="0.5" color="Black" thickness="2"/>
   <connection type="Resource Connection" start="23" end="1" label="all" position="0.5" color="Black" thickness="2"/>
   <connection type="Resource Connection" start="22" end="10" label="all" position="0.5" color="Black" thickness="2"/>
-  <connection type="Resource Connection" start="132" end="135" label="all" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="132" end="134" label="all" position="0.5" color="Black" thickness="2"/>
   <node symbol="Drain" x="320" y="358" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
   <connection type="Resource Connection" start="65" end="21" label="D6" position="0.67" color="Black" thickness="2">
     <point x="383" y="480"/>
@@ -249,10 +249,10 @@
   <node symbol="Register" x="431" y="203" color="Blue" caption="2e+s++2g" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
   <node symbol="Register" x="571" y="206" color="Black" caption="s+2g+2p" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
   <node symbol="Register" x="689" y="203" color="Red" caption="2s+2g+p" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="0" min="-9999" max="9999" start="0" step="1"/>
-  <connection type="State Connection" start="112" end="137" label="" position="0.5" color="Green" thickness="2"/>
-  <connection type="State Connection" start="113" end="137" label="" position="0.5" color="Blue" thickness="2"/>
-  <connection type="State Connection" start="114" end="137" label="" position="0.5" color="Black" thickness="2"/>
-  <connection type="State Connection" start="115" end="137" label="" position="0.5" color="Red" thickness="2"/>
+  <connection type="State Connection" start="112" end="136" label="" position="0.5" color="Green" thickness="2"/>
+  <connection type="State Connection" start="113" end="136" label="" position="0.5" color="Blue" thickness="2"/>
+  <connection type="State Connection" start="114" end="136" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="115" end="136" label="" position="0.5" color="Red" thickness="2"/>
   <node symbol="ArtificialPlayer" x="869" y="665" color="Black" caption="OldController" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (ResE == 0 &amp;&amp; ResS == 0 &amp;&amp; ResG == 0 &amp; ResP == 0) fire(RollDice)fire(RoundRobin)</node>
   <connection type="State Connection" start="84" end="125" label="70%" position="-0.44" color="Black" thickness="2"/>
   <connection type="State Connection" start="124" end="97" label="15%" position="0.5" color="Black" thickness="2"/>
@@ -278,10 +278,6 @@
   </connection>
   <node symbol="Pool" x="741" y="570" color="Black" caption="counter" thickness="2" captionPos="0.35" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="-1" displayCapacity="-1"/>
   <connection type="Resource Connection" start="81" end="132" label="1" position="-0.5" color="Black" thickness="2"/>
-  <connection type="State Connection" start="132" end="135" label="*==2" position="0.5" color="Black" thickness="2">
-    <point x="802" y="568"/>
-    <point x="803" y="667"/>
-  </connection>
   <node symbol="Drain" x="741" y="666" color="Black" caption="Clear Dice Outcomes" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull all" actions="1"/>
   <connection type="State Connection" start="84" end="107" label="*" position="0.97" color="Black" thickness="2">
     <point x="918" y="248"/>
@@ -293,4 +289,8 @@
   <node symbol="ArtificialPlayer" x="440" y="680" color="Black" caption="LastFirst" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (SumE &lt;= SumS &amp;&amp; SumE &lt;= SumG &amp;&amp; SumE &lt;= SumP) fire(InvE)if (SumS &lt;= SumG &amp;&amp; SumS &lt;= SumP) fire(InvS)if (SumG &lt;= SumP) fire(InvG)if (SumP &lt; SumG) fire(InvP)</node>
   <node symbol="ArtificialPlayer" x="621" y="680" color="Black" caption="HighestDice" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (ResE &gt;= ResS &amp;&amp; ResE &gt;= ResG &amp;&amp; ResE &gt;= ResP) fire(InvE)if (ResS &gt;= ResG &amp;&amp; ResS &gt;= ResP) fire(InvS)if (ResG &gt;= ResP) fire(InvG)if (ResP &gt; ResG) fire(InvP)</node>
   <node symbol="ArtificialPlayer" x="528" y="679" color="Black" caption="ReachScore" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="0" actionsPerTurn="1">if (SumE &lt; 40 &amp;&amp; counter == 1) fire(InvE)if (SumS &lt; 30) fire(InvS)if (SumG &lt; 20) fire(InvG)if (SumP &lt; 15) fire(InvP)if (SumE &lt;= SumS) fire(InvE)if (SumE &gt; SumS) fire(InvS)</node>
+  <connection type="State Connection" start="132" end="134" label="==2" position="0.5" color="Black" thickness="2">
+    <point x="802" y="568"/>
+    <point x="803" y="667"/>
+  </connection>
 </graph>
